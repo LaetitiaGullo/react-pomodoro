@@ -29566,12 +29566,15 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"src/index.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"src/components/HelloWorld.js":[function(require,module,exports) {
 "use strict";
 
-var _react = _interopRequireDefault(require("react"));
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 
-var _reactDom = _interopRequireDefault(require("react-dom"));
+var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29597,15 +29600,72 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-// /!\ restart (CTRL+C, npm start) if new import (?)
-// Test with a function
-var App = function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Hello World"));
-};
+//Test with a class
+var HelloWorld = /*#__PURE__*/function (_React$Component) {
+  _inherits(HelloWorld, _React$Component);
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root")); // Test with a class
+  var _super = _createSuper(HelloWorld);
 
+  function HelloWorld() {
+    _classCallCheck(this, HelloWorld);
 
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(HelloWorld, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("h1", null, "Hello World");
+    }
+  }]);
+
+  return HelloWorld;
+}(_react.default.Component);
+
+var _default = HelloWorld; // // Test with a function
+// const App = () => {
+//     return (
+//         <h1>Hello World</h1>
+//     );
+//   };
+// export default App
+
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/components/HelloMessage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+// Test with a class
 var HelloMessage = /*#__PURE__*/function (_React$Component) {
   _inherits(HelloMessage, _React$Component);
 
@@ -29620,22 +29680,38 @@ var HelloMessage = /*#__PURE__*/function (_React$Component) {
   _createClass(HelloMessage, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Hello ", this.props.name));
+      return /*#__PURE__*/_react.default.createElement("p", null, "Hello ", this.props.name);
     }
   }]);
 
   return HelloMessage;
 }(_react.default.Component);
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement(HelloMessage, {
+var _default = HelloMessage;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/components/App.js":[function(require,module,exports) {
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+var _HelloWorld = _interopRequireDefault(require("./HelloWorld"));
+
+var _HelloMessage = _interopRequireDefault(require("./HelloMessage"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_HelloWorld.default, null), document.getElementById("root"));
+
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_HelloMessage.default, {
   name: "Laeti"
-}), document.getElementById("app")); // // Refresh all the page event the hot reload is activated (by default, btw)
-// if (module.hot) {
-//     module.hot.accept(function () {
-//         window.location.reload()
-//     })
-// }
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+}), document.getElementById("app"));
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./HelloWorld":"src/components/HelloWorld.js","./HelloMessage":"src/components/HelloMessage.js"}],"src/index.js":[function(require,module,exports) {
+"use strict";
+
+require("./components/App");
+},{"./components/App":"src/components/App.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29663,7 +29739,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49356" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52254" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
