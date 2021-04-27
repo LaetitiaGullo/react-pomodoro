@@ -1,6 +1,9 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
+import React from "react"
+import ReactDOM from "react-dom"
 
-//ReactDOM.render(<HelloWorld />, document.getElementById("root"));
+import Pomodoro from "./components/Pomodoro"
 
-console.log("Hello, World !")
+ReactDOM.render(
+    <Pomodoro />,
+    document.getElementById("app")
+)
