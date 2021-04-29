@@ -6,7 +6,7 @@ const Button = ({label, title, disabled = false, onClick}) => {
     <button
         onClick={onClick}
         disabled={disabled}
-        className={""}
+        className={"button is-primary is-medium is-fullwidth"}
         type={"button"}
         title={title || label}
         >

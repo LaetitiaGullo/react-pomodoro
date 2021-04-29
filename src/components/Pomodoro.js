@@ -24,8 +24,8 @@ const Pomodoro = () => {
     const handleReset = () => setSeconds(SESSION_DURATION);
 
     return (
-        <div>
-            <div>
+        <div className="columns is-mobile is-centered">
+            <div className="column is-half">
                 <Display seconds={seconds} running={running} />
                 <Tools
                     running={running}

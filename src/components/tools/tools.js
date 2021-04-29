@@ -6,7 +6,7 @@ import Button from "./button";
 
 const Tools = ({running, onStartPause, onReset, onPlus, onMinus}) => {
     return (
-    <div className={""}>
+    <div className={"is-flex"}>
         <Button
             label={"-"}
             title={"Remove 1 minute"}
