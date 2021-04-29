@@ -8,7 +8,7 @@ const styles = {
     textAlign: "center"
 }
 
-const Display = ({seconds, running=false}) => {
+const Display = ({seconds}) => {
 
     return (
         <div style={styles}>
@@ -23,7 +23,6 @@ const Display = ({seconds, running=false}) => {
 
 Display.propTypes={
     seconds: PropTypes.number.isRequired,
-    running: PropTypes.bool
 }
 // Define de type of props expected (ex: a number), only in development
 

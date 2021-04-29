@@ -30,7 +30,7 @@ const Pomodoro = () => {
     return (
         <div className="columns is-mobile is-centered">
             <div className="column is-half">
-                <Display seconds={seconds} running={running} />
+                <Display seconds={seconds} />
                 <Tools
                     running={running}
                     onMinus={handleMinus}
