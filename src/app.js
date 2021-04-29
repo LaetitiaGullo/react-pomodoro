@@ -1,11 +1,10 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
 
-import "bulma"
+import "bulma";
 
-import Pomodoro from "./components/Pomodoro"
+import Pomodoro from "./components/Pomodoro";
 
 ReactDOM.render(
-    <Pomodoro />,
-    document.getElementById("app")
+    <Pomodoro />, document.getElementById("app")
 )

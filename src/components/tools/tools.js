@@ -16,6 +16,7 @@ const Tools = ({running, onStartPause, onReset, onPlus, onMinus}) => {
         {NBSP}
         <Button
             label={"Reset"}
+            title={"Reset the initial duration"}
             disabled={running}
             onClick={onReset}
         />

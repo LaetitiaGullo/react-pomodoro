@@ -9,16 +9,13 @@ const styles = {
 }
 
 const Display = ({seconds, running=false}) => {
-    let separator = ":"
-
-    if (running) {
-        separator = seconds % 2 ? ":":""
-    }
 
     return (
         <div style={styles}>
             <Ciphers value={Math.floor(seconds/60)} />
-            <span>{":"}</span>
+            <span /*style={{
+                opacity: seconds % 2 ? 1 : 0
+            }}*/>{":"}</span>
             <Ciphers value={seconds%60} />
         </div>
     )
