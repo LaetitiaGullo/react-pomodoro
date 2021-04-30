@@ -18,3 +18,6 @@ Project carried out as part of the "Junior web developer" training [@ BeCode](ht
 
 ### Instructions link :
 [Click here](https://github.com/becodeorg/LIE-Jepsen-4.27/tree/master/03-the-mountain/02-mern/01-pomodoro)
+
+### Tutorial link :
+[Click here](https://github.com/leny/timanti)
