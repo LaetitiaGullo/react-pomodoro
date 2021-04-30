@@ -1,15 +1,14 @@
 # Pomodoro timer with React
 
 ### URL :
-Upcoming
-<!-- Pour minifier le code en fin de projet :
-supprimer le dossier "dist" puis ./nodes_modules/.bin/parcel build index.html -->
+https://pomodor-o-clock.netlify.app/
+
 
 ### Date of realization :
 April 2021
 
 ### Status :
-In progress
+Completed project
 
 ### Type of project :
 Learning
